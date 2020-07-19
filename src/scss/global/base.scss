@@ -1,0 +1,45 @@
+// SCSS Color Variables
+$primary: "#fff";
+$primary-light: "#C3DECC";
+
+// Reset CSS
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+// Text Sizes
+html {
+  min-height: 100%;
+  font-size: 90%;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 100%;
+  }
+}
+
+// CSS: apply 'section' styling starting from 2nd element as navbar excluded
+// NOTE: This approach is convoluted as nav,footer don't need it
+// Better to just apply manually
+.section {
+  margin: 64px 16px;
+
+  @media screen and (min-width: 480px) {
+    margin: 64px 64px;
+  }
+}
+
+// Text Lead Paragraph
+.lead {
+  font-weight: 600;
+}

@@ -1,0 +1,35 @@
+// Note about structure: main.scss will contain styling for entire site for all pages, import specific style (eg: about.scss) if they exist. Allows for caching = faster performance
+
+// Material IO Color Themeing
+$primary: #0d47a1;
+$p_light: #5472d3;
+$p_dark: #002171;
+$secondary: #b71c1c;
+$s_light: #f05545;
+$s_dark: #7f0000;
+
+// Bootstrap Overrides go before Import
+$spacer: 2rem;
+
+$spacers: (
+  6: (
+    $spacer * 3.5,
+  ),
+  7: (
+    $spacer * 10,
+  ),
+);
+
+// Import Vendors
+@import "~bootstrap/scss/bootstrap";
+
+// Import Reusable Components
+@import "./components/button.scss";
+
+// Import Global Website Styling
+@import "./global/base.scss";
+@import "./global/navbar.scss";
+@import "./global/footer.scss ";
+
+// Import Pages
+@import "./pages/home.scss";

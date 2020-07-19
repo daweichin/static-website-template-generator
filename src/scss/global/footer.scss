@@ -1,0 +1,35 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+}
+
+.footer-container {
+  display: flex;
+  background: #73957e;
+  max-width: 100vw;
+  height: 100%;
+  padding: 32px 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 200px;
+
+  // BUG: On small phones text-wrap not functioning
+  // This acts as a temporary fix
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+}
+
+.footer-container .contact > p,
+h2 {
+  color: #fff;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0;
+}

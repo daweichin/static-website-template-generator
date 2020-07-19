@@ -1,0 +1,13 @@
+button {
+  margin: 0;
+  padding: 8px 16px;
+  color: #eee;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: $p_dark;
+  border: none;
+  transition: background-color ease-in-out 0.5s;
+}
+button:hover {
+  background-color: $primary;
+}
